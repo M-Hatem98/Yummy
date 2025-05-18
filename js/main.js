@@ -255,7 +255,7 @@ function displayArea(arr) {
     for (let i = 0; i < arr.length; i++) {
         holder += `
         <div class="col-md-3">
-                <div onclick="getAreaMeals('${arr[i].strArea}')" class="card rounded-2 text-center text-white cursor-pointer">
+                <div onclick="getAreaMeals('${arr[i].strArea}')" class="rounded-2 text-center text-white cursor-pointer">
                         <i class="fa-solid fa-house-laptop fa-4x"></i>
                         <h3>${arr[i].strArea}</h3>
                 </div>
@@ -294,7 +294,7 @@ function displayIngredients(arr) {
     for (let i = 0; i < arr.length; i++) {
         holder += `
         <div class="col-md-3">
-                <div onclick="getIngredientsMeals('${arr[i].strIngredient}')" class="card rounded-2 text-white text-center cursor-pointer">
+                <div onclick="getIngredientsMeals('${arr[i].strIngredient}')" class="rounded-2 text-white text-center cursor-pointer">
                         <i class="fa-solid fa-drumstick-bite fa-4x"></i>
                         <h3>${arr[i].strIngredient}</h3>
                         <p>${arr[i].strDescription.split(" ").slice(0,20).join(" ")}</p>
