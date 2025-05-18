@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yummy</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Mohamed Hatem">
+
+<link rel="icon" href="images/logo-sm.png" type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="pageLoader" class="page-loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="sidebar z-3 position-fixed top-0 fs-4 d-flex justify-content-between vh-100 bg-black">
+   <div class="left d-flex flex-column justify-content-between px-3 pt-5 text-white">
+
+      <ul class="sidebar-menu list-unstyled text-white">
+         <li class="position-relative" onclick="showSearchInputs()">Search</li>
+         <li class="position-relative" onclick="getCategory()">Categories</li>
+         <li class="position-relative" onclick="getArea()">Area</li>
+         <li class="position-relative" onclick="getIngredients()">Ingredients</li>
+         <li class="position-relative" onclick="showContacts()">Contact Us</li>
+      </ul>
+      <div class="info">
+         <div class="icons d-flex justify-content-around mb-3">
+            <a href="https://github.com/M-Hatem98/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/M-Hatem98/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/mohammed.hatem.007" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+         </div>
+         <div class="copyright">
+            <p>© 2025 <a href="https://m-hatem98.github.io/Mohammed-Hatem/">Mohammed Hatem</a><br> All rights reserved</p>
+         </div>
+      </div>
+   </div>
+   <div class="right text-black py-5 d-flex flex-column justify-content-between text-center bg-white">
+      <div class="logo">
+         <img src="images/logo-sm.png" alt="logo" class="img-fluid">
+      </div>
+      <div class="close-icon">
+         <i class="fa-solid fa-bars fs-1"></i>
+      </div>
+      
+      <div class="share-icon">
+         <a href="https://m-hatem98.github.io/Mohammed-Hatem/"><i class="fa-solid fa-globe d-block"></i></a>
+         <a href="https://wa.me/?text=Check my Portfolio https://m-hatem98.github.io/Mohammed-Hatem/"><i class="fa-solid fa-share-nodes"></i></a>
+      </div>
+      
+   </div>
+   </div>
+
+   <div class="container py-5 text-white" id="searchContainer">
+
+   </div>
+
+   <div id="inner-loading" class="inner-loading d-none">
+  <div class="loader"></div>
+</div>
+ <section class="meals-holder position-relative">
+    <div class="container">
+       <div class="row py-5 g-4" id="meals">
+         
+         </div>        
+      </div>
+</section> 
+
+  
+  <!-- Bootstrap JS -->
+   <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
+
